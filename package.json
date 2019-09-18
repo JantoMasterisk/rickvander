@@ -1,0 +1,26 @@
+{
+  "name": "zeuven-bot-rick",
+  "version": "1.0.0",
+  "description": "Zeuven Bot, voor Rick",
+  "main": "bot.js",
+  "dependencies": {
+    "@keyv/sqlite": "^2.0.1",
+    "bananenbase": "^3.2.6",
+    "discord.js": "^11.5.1",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^4.0.0",
+    "keyv": "^3.1.0",
+    "moment": "^2.24.0",
+    "opusscript": "0.0.7",
+    "request": "^2.88.0",
+    "ytdl-core": "^0.29.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm i && node bot",
+    "run": "npm i && node bot",
+    "start": "npm i && node bot"
+  },
+  "author": "Paul",
+  "license": "ISC"
+}
