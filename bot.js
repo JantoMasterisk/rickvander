@@ -21,7 +21,7 @@ new BananenBase({
     (client, message, args) => { // Permission level 0
       return true;
     }, (client, message, args) => { // Permission level 1
-      if (message.member.roles.some(r => ["Moderator", "mod", "Mod", "Team PlotTwist", "Admin"].includes(r.name)) || ["142368754968297473", "184030800788848640", "233729682372165632", "327462385361092621"].includes(message.author.id)) return true;
+      if (message.member.roles.some(r => ["Moderator", "mod", "Mod", "Team PlotTwist", "Admin", "Staff"].includes(r.name)) || ["142368754968297473", "184030800788848640", "233729682372165632", "327462385361092621"].includes(message.author.id)) return true;
       return false;
     }, (client, message, args) => { // Permission level 2
       if (client.config.botOwners.includes(message.author.id)) return true; // A bot owner
@@ -43,7 +43,7 @@ new BananenBase({
     logs: "CHANNELNAAM",
     noAutoMod: "ROLNAAM",
     autoModLogs: "CHANNELNAAM",
-    swearWords: ["gdv", "godverdomme", "fack", "tering", "kut", "idioot", "kak", "lafaard", "oen", "lul", "eikel"],
+    swearWords: ["gdv", "godverdomme", "kanker", "kk"],
     authorSettings: {
       warns: [],
       mutes: [],
@@ -79,7 +79,7 @@ new BananenBase({
           let muteRole = guild.roles.find(r => r.name === "muted");
           try {
             member.removeRole(muteRole.id);
-            member.user.send("De mute is om! Je kan weer chatten!");
+            member.user.send("De mute is voorbij! Je kan weer chatten!");
           } catch(e) {}
         } else newMutedUsers.push(user);
       });
