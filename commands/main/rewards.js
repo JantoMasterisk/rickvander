@@ -11,8 +11,8 @@ module.exports = class Menu extends command {
 
   async run(message) {
     message.channel.send(`***Rewards***
-Je wordt beloond door mensen geinvited worden.
-dit wordt gecotreleerd met een bot en de mensen moeten nog in deze dc zitten dus niet geleaved zijn.
+Je wordt beloond door mensen te inviten!
+Dit wordt gecontroleerd met de invite manager bot!
 \`\`\`
 10 leden  is custom rankje "VIP"
 25 leden is Random Steam key\`\`\``);
